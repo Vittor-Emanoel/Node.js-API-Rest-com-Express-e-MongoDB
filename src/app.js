@@ -30,10 +30,10 @@ app.get("/livros/:id", (req, res) => {
 });
 
 //criar um livro
-app.post("/livros", (req, res) => {
-  livros.push(req.body);
-  res.status(201).send("Livro foi cadastrado com sucesso");
-});
+// app.post("/livros", (req, res) => {
+//   livros.push(req.body);
+//   res.status(201).send("Livro foi cadastrado com sucesso");
+// });
 
 //editar um livro
 app.put("/livros/:id", (req, res) => {
