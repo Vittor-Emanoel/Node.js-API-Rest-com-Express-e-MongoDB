@@ -6,7 +6,7 @@ const routes = (app) => {
   app.route("/").get((req, res) => {
     res.status(200).send({ titulo: "curso de node" });
   });
-  app.use(express.json(), autores);
+  app.use(express.json(), autores, livros);
 };
 
 export default routes;
